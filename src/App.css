@@ -1,19 +1,25 @@
-.share-modal {
-  width: 500px;
-  height: 700px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #333;
-}
-
 .lsm-dev-mode-container {
   display: flex;
   flex-direction: column;
-  width: 35rem;
+  width: 100%;
 }
 
 .lsm-dev-mode-container-label {
   color: white;
+}
+
+@media (min-width: 768px) {
+  .lsm-dev-mode-container {
+    width: 35rem;
+  }
+
+  .share-modal {
+    width: 500px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #333;
+  }
 }
