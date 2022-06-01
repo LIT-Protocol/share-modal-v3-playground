@@ -5,6 +5,15 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /*border: 1px solid #d4d4d4;*/
-  /*border-radius: 0.25rem;*/
+  border: 1px solid #333;
+}
+
+.lsm-dev-mode-container {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+}
+
+.lsm-dev-mode-container-label {
+  color: white;
 }

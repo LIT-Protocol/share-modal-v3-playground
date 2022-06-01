@@ -8091,16 +8091,16 @@ lit-js-sdk@^1.1.180:
     uint8arrays "^3.0.0"
     utf-8-validate "^5.0.8"
 
-lit-share-modal-v3@^0.0.38:
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/lit-share-modal-v3/-/lit-share-modal-v3-0.0.38.tgz#d5f246cc8fc81abc50441dee4a4f0d2ff505278b"
-  integrity sha512-APsRlsDawaOwCCbq1uMjaWyOH1cTecb1DwpjdUGdyrAASixgzcQ51UBdUbUGyBPcPTaN/a7rf0sEQCBQmT7DOw==
+lit-share-modal-v3@^0.0.55:
+  version "0.0.55"
+  resolved "https://registry.yarnpkg.com/lit-share-modal-v3/-/lit-share-modal-v3-0.0.55.tgz#f28a9a5b0d9ec393ad69f42c9ab80becdfb2c342"
+  integrity sha512-KK6G5ZR4b6en6aQvIfnv2mmaLtvGE5gnuKCbNA8KUA1JwwgRzGRoPRxAEzX7Uwivgyp5i+OHIQU/EKXzK4959w==
   dependencies:
     ethers "^5.5.4"
     events "^3.3.0"
     lit-js-sdk "^1.1.180"
-    react "^18.0.0"
-    react-dom "^18.0.0"
+    react "^18.1.0"
+    react-dom "^18.1.0"
     react-select "^5.3.2"
     react-windowed-select "^5.0.0"
 
@@ -10347,7 +10347,7 @@ react-dev-utils@^11.0.3:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-dom@^18.0.0, react-dom@^18.1.0:
+react-dom@^18.1.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.1.0.tgz#7f6dd84b706408adde05e1df575b3a024d7e8a2f"
   integrity sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w==
@@ -10483,7 +10483,7 @@ react-windowed-select@^5.0.0:
     react-select "^5.2.2"
     react-window "^1.8.6"
 
-react@^18.0.0, react@^18.1.0:
+react@^18.1.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.1.0.tgz#6f8620382decb17fdc5cc223a115e2adbf104890"
   integrity sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==
