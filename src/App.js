@@ -5,7 +5,7 @@ import ShareModal from "lit-share-modal-v3";
 function App() {
   const [showShareModal, setShowShareModal] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
-  const [devMode, setDevMode] = useState(false)
+  // const [devMode, setDevMode] = useState(false)
 
   const [unifiedAccessControlConditions, setUnifiedAccessControlConditions] = useState('')
 
@@ -37,7 +37,6 @@ function App() {
         {showShareModal && (
           <div className={'share-modal'}>
             <ShareModal
-              allowDevMode={devMode}
               darkTheme={darkMode}
               onClose={() => {
                 setShowShareModal(false);
