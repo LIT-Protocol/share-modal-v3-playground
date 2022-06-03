@@ -23,15 +23,17 @@ function App() {
     }
   }
 
+  console.log('check ', window.outerWidth > 768)
+
   return (
     <div className="App">
       <div className={'left-side'}>
-        {window.innerWidth > 768 && (
+        {window.outerWidth > 768 && (
           <button className={'playground-button'} onClick={() => setIsModal(!isModal)}>
             Format is&nbsp;<strong>{isModal ? 'modal' : 'embedded'}</strong>&nbsp;(embed was designed for desktop)
           </button>
         )}
-        <button className={'playground-button thicken-border'} onClick={() => setShowShareModal(!showShareModal)} disabled={!isModal}>
+        <button className={'playground-button'} onClick={() => setShowShareModal(!showShareModal)} disabled={!isModal}>
           Show Share Modal
         </button>
         <button className={'playground-button'} onClick={() => setDarkMode(!darkMode)}>
