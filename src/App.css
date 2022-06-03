@@ -1,3 +1,15 @@
+.App {
+  display: flex;
+  font-size: 16px;
+  /*flex-direction: column;*/
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  /*width: 100%;*/
+}
+
 .lsm-dev-mode-container {
   display: flex;
   flex-direction: column;
@@ -8,9 +20,87 @@
   color: white;
 }
 
+.playground-button {
+  margin: 0.5em;
+  max-width: 35em;
+  width: auto;
+  transition-duration: 0.25s;
+  /*height: 3rem !important;*/
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.playground-button:hover {
+  background-color: #999;
+}
+
+.thicken-border {
+  border: 2px solid #3a3e57;
+}
+
+.dropdown-select {
+  margin: 0.25em;
+}
+
+.dropdown-select label {
+  margin-right: 0.75em;
+  color: white;
+}
+
+.selector {
+  margin: 0.5em;
+  max-width: 35em;
+  width: auto;
+  transition-duration: 0.25s;
+  height: 3rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.dev-mode-container {
+  overflow-y: scroll;
+  height: calc(100% - 5em);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-mode-container-label {
+  margin: 1em;
+  color: #fff;
+}
+
+.dev-mode-textarea {
+  width: 95%;
+  background-color: #333;
+  color: #fff;
+}
+
+.right-side {
+  /*display: none;*/
+}
+
 @media (min-width: 768px) {
-  .lsm-dev-mode-container {
+  .right-side {
+    display: inline-block;
+  }
+
+  .dev-mode-container {
     width: 35rem;
+    margin: 0.5em;
+  }
+
+  .embedded {
+    position: absolute;
+    width: 500px;
+    height: 700px;
   }
 
   .share-modal {
