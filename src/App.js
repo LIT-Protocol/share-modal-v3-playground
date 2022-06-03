@@ -26,9 +26,11 @@ function App() {
   return (
     <div className="App">
       <div className={'left-side'}>
-        <button className={'playground-button'} onClick={() => setIsModal(!isModal)}>
-          Format is&nbsp;<strong>{isModal ? 'modal' : 'embedded'}</strong>&nbsp;(embed was designed for desktop)
-        </button>
+        {window.innerWidth > 768 && (
+          <button className={'playground-button'} onClick={() => setIsModal(!isModal)}>
+            Format is&nbsp;<strong>{isModal ? 'modal' : 'embedded'}</strong>&nbsp;(embed was designed for desktop)
+          </button>
+        )}
         <button className={'playground-button thicken-border'} onClick={() => setShowShareModal(!showShareModal)} disabled={!isModal}>
           Show Share Modal
         </button>
