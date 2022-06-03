@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ShareModal from "lit-share-modal-v3";
 
 function App() {
