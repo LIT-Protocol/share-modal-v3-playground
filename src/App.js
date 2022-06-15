@@ -1,6 +1,23 @@
 import './App.css';
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import ShareModal from "lit-share-modal-v3";
+
+const initialTextArea = [
+  {
+    "conditionType": "",
+    "contractAddress": "",
+    "standardContractType": "",
+    "chain": "",
+    "method": "",
+    "parameters": [
+      ":userAddress"
+    ],
+    "returnValueTest": {
+      "comparator": "",
+      "value": ""
+    }
+  }
+]
 
 function App() {
   const [showShareModal, setShowShareModal] = useState(false)
@@ -23,7 +40,9 @@ function App() {
     }
   }
 
-  console.log('check ', window.outerWidth > 768)
+  useEffect(() => {
+    onUnifiedAccessControlConditionsSelected({unifiedAccessControlConditions: initialTextArea});
+  }, [])
 
   return (
     <div className="App">
